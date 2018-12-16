@@ -15,6 +15,7 @@
 		FA2A562721C5695A005C7720 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2A562521C5695A005C7720 /* LaunchScreen.storyboard */; };
 		FA2A563221C5695A005C7720 /* VKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A563121C5695A005C7720 /* VKTests.swift */; };
 		FA2A563D21C58285005C7720 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A563C21C58285005C7720 /* LoginTextField.swift */; };
+		FA7C0A4E21C664BB0080EAA8 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7C0A4D21C664BB0080EAA8 /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		FA2A563121C5695A005C7720 /* VKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKTests.swift; sourceTree = "<group>"; };
 		FA2A563321C5695A005C7720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA2A563C21C58285005C7720 /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		FA7C0A4D21C664BB0080EAA8 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,11 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				FA2A561921C56956005C7720 /* AppDelegate.swift */,
-				FA2A561B21C56956005C7720 /* LoginFormController.swift */,
-				FA2A561D21C56956005C7720 /* Main.storyboard */,
-				FA2A563C21C58285005C7720 /* LoginTextField.swift */,
+				FA7C0A4A21C662E50080EAA8 /* Controller */,
+				FA7C0A4B21C6636B0080EAA8 /* View */,
+				FA7C0A4C21C6639C0080EAA8 /* Model */,
 				FA2A562321C5695A005C7720 /* Assets.xcassets */,
-				FA2A562521C5695A005C7720 /* LaunchScreen.storyboard */,
 				FA2A562821C5695A005C7720 /* Info.plist */,
 				FA2A562021C56956005C7720 /* VK.xcdatamodeld */,
 			);
@@ -100,6 +101,32 @@
 				FA2A563321C5695A005C7720 /* Info.plist */,
 			);
 			path = VKTests;
+			sourceTree = "<group>";
+		};
+		FA7C0A4A21C662E50080EAA8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA2A561B21C56956005C7720 /* LoginFormController.swift */,
+				FA7C0A4D21C664BB0080EAA8 /* MainTabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA7C0A4B21C6636B0080EAA8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA2A561D21C56956005C7720 /* Main.storyboard */,
+				FA2A562521C5695A005C7720 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA7C0A4C21C6639C0080EAA8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA2A563C21C58285005C7720 /* LoginTextField.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +232,7 @@
 			files = (
 				FA2A561C21C56956005C7720 /* LoginFormController.swift in Sources */,
 				FA2A563D21C58285005C7720 /* LoginTextField.swift in Sources */,
+				FA7C0A4E21C664BB0080EAA8 /* MainTabBarController.swift in Sources */,
 				FA2A561A21C56956005C7720 /* AppDelegate.swift in Sources */,
 				FA2A562221C56956005C7720 /* VK.xcdatamodeld in Sources */,
 			);

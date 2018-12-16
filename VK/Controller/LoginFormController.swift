@@ -37,21 +37,50 @@ class LoginFormController: UIViewController {
         scrollView?.addGestureRecognizer(hideKeybordGesture)
 
     }
-
-    @IBAction func loginButtonAction(_ sender: Any) {
-        
-        let login = loginInput.text!
-        let password = passwordInput.text!
-        
-        if login == "Admin" &&  password == "12345" {
+    //Перезаписываем функию управления переходом
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        guard  identifier == "ShowTabBarController"  else { return false }
+        let checkResult = checkUsersData()
+        if !checkResult {
+            print("Error")
+        }
+        return checkResult
+    }
+    
+    
+    
+    
+    //Функция проверки польователя и пароля
+    func checkUsersData() -> Bool {
+        guard let login = loginInput.text, let password = passwordInput.text else {return false}
+        if login == "Admin" && password == "12345" {
             warningLabel.textColor = .black
             warningLabel.text = "loading please wait..."
+            return true
         } else {
             warningLabel.textColor = .red
             warningLabel.text = "password or login incorrect"
-        }
- 
+        return false
     }
+    }
+    
+
+    @IBAction func loginButtonAction(_ sender: Any) {
+        
+  //      checkUsersData()
+//
+//        let login = loginInput.text!
+//        let password = passwordInput.text!
+//
+//        if login == "Admin" &&  password == "12345" {
+//            warningLabel.textColor = .black
+//            warningLabel.text = "loading please wait..."
+//        } else {
+//            warningLabel.textColor = .red
+//            warningLabel.text = "password or login incorrect"
+       }
+ 
+    
     @IBAction func regButtonAction(_ sender: Any) {
         
     }
