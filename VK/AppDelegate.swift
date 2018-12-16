@@ -3,7 +3,7 @@
 //  VK
 //
 //  Created by ALEKSANDR KIRILENKOV on 15/12/2018.
-//  Copyright © 2018 ALEKSANDR KIRILENKOV. All rights reserved.
+//  Copyright © 2018 ALEKSANDR KIR(LENKOV. All rights reserved.
 //
 
 import UIKit
@@ -13,10 +13,14 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+  //  var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
+    
 
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+       
+        Thread.sleep(forTimeInterval: 0.5)
+       // activityIndicator.startAnimating()
         return true
     }
 
@@ -77,7 +81,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func saveContext () {
         let context = persistentContainer.viewContext
-        if context.hasChanges {
+        if  context.hasChanges {
             do {
                 try context.save()
             } catch {

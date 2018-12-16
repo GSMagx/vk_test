@@ -13,14 +13,13 @@ class LoginFormController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var loginInput: LoginTextField!
     @IBOutlet weak var passwordInput: LoginTextField!
-    @IBOutlet weak var warningLabel: UILabel!
+    @IBOutlet weak var warningLabel:  UILabel!
     
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
-        
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
@@ -67,7 +66,7 @@ class LoginFormController: UIViewController {
 
     @IBAction func loginButtonAction(_ sender: Any) {
         
-  //      checkUsersData()
+//      checkUsersData()
 //
 //        let login = loginInput.text!
 //        let password = passwordInput.text!
@@ -82,10 +81,8 @@ class LoginFormController: UIViewController {
  
     
     @IBAction func regButtonAction(_ sender: Any) {
-        
     }
     @IBAction func forgotPasButtonAction(_ sender: Any) {
-        
     }
     
 }
