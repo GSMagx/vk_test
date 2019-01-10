@@ -74,15 +74,21 @@ class LoginFormController: UIViewController {
     func checkUsersData() -> Bool {
         guard let login = loginInput.text, let password = passwordInput.text else {return false}
         if login == "Admin" && password == "12345" {
-            warningLabel.textColor = .black
-            warningLabel.text = "loading please wait..."
             return true
         } else {
-            warningLabel.textColor = .red
-            warningLabel.text = "password or login incorrect"
+        showLoginError()
         return false
     }
     }
+    func showLoginError() {
+        let alert = UIAlertController(title: "Error", message: "Wrong Password or login", preferredStyle: .alert)
+    
+        let alertAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        present(alert, animated: true, completion: nil)
+        alert.addAction(alertAction)
+
+    }
+
     @IBAction func loginButtonAction(_ sender: Any) {
         
 //      checkUsersData()
