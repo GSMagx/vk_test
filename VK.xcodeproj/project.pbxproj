@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA25499221E7DC9400E2EFEB /* TableViewCellMyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA25499121E7DC9400E2EFEB /* TableViewCellMyMessage.swift */; };
+		FA25499421E7DCBC00E2EFEB /* MyMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA25499321E7DCBC00E2EFEB /* MyMessageTableViewController.swift */; };
 		FA2A561A21C56956005C7720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A561921C56956005C7720 /* AppDelegate.swift */; };
 		FA2A561C21C56956005C7720 /* LoginFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A561B21C56956005C7720 /* LoginFormController.swift */; };
 		FA2A561F21C56956005C7720 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2A561D21C56956005C7720 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 		FA2A563221C5695A005C7720 /* VKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A563121C5695A005C7720 /* VKTests.swift */; };
 		FA2A563D21C58285005C7720 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A563C21C58285005C7720 /* LoginTextField.swift */; };
 		FA7C0A4E21C664BB0080EAA8 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7C0A4D21C664BB0080EAA8 /* MainTabBarController.swift */; };
+		FAABD5FF21E7CDC900524134 /* AllMessageTabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABD5FE21E7CDC900524134 /* AllMessageTabelViewController.swift */; };
+		FAABD60121E7CE0700524134 /* TableViewCellAllMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABD60021E7CE0700524134 /* TableViewCellAllMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA25499121E7DC9400E2EFEB /* TableViewCellMyMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellMyMessage.swift; sourceTree = "<group>"; };
+		FA25499321E7DCBC00E2EFEB /* MyMessageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMessageTableViewController.swift; sourceTree = "<group>"; };
 		FA2A561621C56956005C7720 /* VK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2A561921C56956005C7720 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA2A561B21C56956005C7720 /* LoginFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormController.swift; sourceTree = "<group>"; };
@@ -42,6 +48,8 @@
 		FA2A563321C5695A005C7720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA2A563C21C58285005C7720 /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 		FA7C0A4D21C664BB0080EAA8 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		FAABD5FE21E7CDC900524134 /* AllMessageTabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMessageTabelViewController.swift; sourceTree = "<group>"; };
+		FAABD60021E7CE0700524134 /* TableViewCellAllMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellAllMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,8 @@
 		FA7C0A4A21C662E50080EAA8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FAABD5FE21E7CDC900524134 /* AllMessageTabelViewController.swift */,
+				FA25499321E7DCBC00E2EFEB /* MyMessageTableViewController.swift */,
 				FA2A561B21C56956005C7720 /* LoginFormController.swift */,
 				FA7C0A4D21C664BB0080EAA8 /* MainTabBarController.swift */,
 			);
@@ -124,6 +134,8 @@
 		FA7C0A4C21C6639C0080EAA8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FAABD60021E7CE0700524134 /* TableViewCellAllMessage.swift */,
+				FA25499121E7DC9400E2EFEB /* TableViewCellMyMessage.swift */,
 				FA2A563C21C58285005C7720 /* LoginTextField.swift */,
 			);
 			path = Model;
@@ -234,6 +246,10 @@
 				FA2A563D21C58285005C7720 /* LoginTextField.swift in Sources */,
 				FA7C0A4E21C664BB0080EAA8 /* MainTabBarController.swift in Sources */,
 				FA2A561A21C56956005C7720 /* AppDelegate.swift in Sources */,
+				FAABD5FF21E7CDC900524134 /* AllMessageTabelViewController.swift in Sources */,
+				FA25499221E7DC9400E2EFEB /* TableViewCellMyMessage.swift in Sources */,
+				FA25499421E7DCBC00E2EFEB /* MyMessageTableViewController.swift in Sources */,
+				FAABD60121E7CE0700524134 /* TableViewCellAllMessage.swift in Sources */,
 				FA2A562221C56956005C7720 /* VK.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
