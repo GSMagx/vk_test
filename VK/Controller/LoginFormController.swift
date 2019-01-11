@@ -107,7 +107,13 @@ class LoginFormController: UIViewController {
 //        Any) {
 //       performSegue(withIdentifier: "ShowTabBarController", sender: checkUsersData())
 //    }
-  
+    @IBAction func enterPressedKeyboardlogin(_ sender: Any) {
+        performSegue(withIdentifier: "ShowTabBarController", sender: checkUsersData())
+    }
+    @IBAction func enterPressedKeyboardPass(_ sender: Any) {
+        performSegue(withIdentifier: "ShowTabBarController", sender: checkUsersData())
+    }
+    
     @IBAction func regButtonAction(_ sender: Any) {
     }
     @IBAction func forgotPasButtonAction(_ sender: Any) {
