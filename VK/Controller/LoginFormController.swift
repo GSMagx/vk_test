@@ -103,6 +103,11 @@ class LoginFormController: UIViewController {
 //            warningLabel.textColor = .red
 //            warningLabel.text = "password or login incorrect"
        }
+//    @IBAction func enterPressedKeyboardLogin(_ sender:
+//        Any) {
+//       performSegue(withIdentifier: "ShowTabBarController", sender: checkUsersData())
+//    }
+  
     @IBAction func regButtonAction(_ sender: Any) {
     }
     @IBAction func forgotPasButtonAction(_ sender: Any) {

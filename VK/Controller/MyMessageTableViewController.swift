@@ -95,8 +95,18 @@ class MyMessageTableViewController: UITableViewController {
     
     @IBAction func addFriend(unwindSeque: UIStoryboardSegue) {
         
-    }
-
+        if unwindSeque.identifier == "addFriend" {
+            
+            let allMessageController = unwindSeque.source as! AllMessageTabelViewController
+            if  let indexPath = allMessageController.tableView.indexPathForSelectedRow {
+                let friend = allMessageController.friends[indexPath.row]
+                
+                myFriend.append(friend)
+                
+                tableView.reloadData()
+            }
+        }
     
     
+}
 }

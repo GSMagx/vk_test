@@ -383,7 +383,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="friendName" destination="WxJ-M9-RdL" id="lse-Qw-saP"/>
-                                    <segue destination="679-l2-oa2" kind="unwind" trigger="accessoryAction" unwindAction="addFriendWithUnwindSeque:" id="j5a-HU-LtR"/>
+                                    <segue destination="cTA-i0-UYm" kind="unwind" identifier="addFriend" unwindAction="addFriendWithUnwindSeque:" id="p6A-1U-HBr"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -395,6 +395,7 @@
                     <navigationItem key="navigationItem" title="Title" id="exr-RC-t67"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hNN-DH-uXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="cTA-i0-UYm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3276" y="680.54187192118229"/>
         </scene>
@@ -439,7 +440,6 @@
                     </tableView>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AQQ-vl-LWJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="679-l2-oa2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4185" y="681"/>
         </scene>
