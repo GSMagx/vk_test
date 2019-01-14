@@ -123,7 +123,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="IB8-Qd-lLP">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4u7-W1-P0j">
                                         <rect key="frame" x="176" y="476" width="42" height="21"/>
@@ -132,6 +132,9 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="pVc-7y-JEh">
+                                        <rect key="frame" x="20" y="120" width="374" height="526"/>
+                                    </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XDR-QT-LGA">
                                         <rect key="frame" x="149" y="497" width="97" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -139,6 +142,14 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6T-Qe-fLA">
+                                        <rect key="frame" x="174" y="555" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="dVY-Jf-cBx" kind="show" identifier="ShowTabBarController" id="pMX-T2-g4l"/>
+                                        </connections>
+                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5X-9C-2Nf">
                                         <rect key="frame" x="176" y="332" width="42" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -167,23 +178,19 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6T-Qe-fLA">
-                                        <rect key="frame" x="174" y="555" width="46" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <segue destination="dVY-Jf-cBx" kind="show" id="pMX-T2-g4l"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.19607843137254902" green="0.39215686274509803" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="Ou1-th-nen" firstAttribute="top" secondItem="IB8-Qd-lLP" secondAttribute="top" id="3kP-z7-S5k"/>
+                                    <constraint firstAttribute="bottom" secondItem="pVc-7y-JEh" secondAttribute="bottom" constant="250" id="4AM-tp-ZKg"/>
+                                    <constraint firstAttribute="trailing" secondItem="pVc-7y-JEh" secondAttribute="trailing" constant="20" id="4Fd-l6-lCm"/>
                                     <constraint firstItem="6iK-24-1MH" firstAttribute="top" secondItem="IB8-Qd-lLP" secondAttribute="top" id="9tF-5m-wR1"/>
                                     <constraint firstAttribute="trailing" secondItem="Ou1-th-nen" secondAttribute="trailing" id="E9l-z4-Dpn"/>
                                     <constraint firstItem="6iK-24-1MH" firstAttribute="leading" secondItem="IB8-Qd-lLP" secondAttribute="leading" id="Kig-vO-jdj"/>
                                     <constraint firstAttribute="bottom" secondItem="6iK-24-1MH" secondAttribute="bottom" id="PtU-bn-ldV"/>
+                                    <constraint firstItem="pVc-7y-JEh" firstAttribute="top" secondItem="IB8-Qd-lLP" secondAttribute="top" constant="120" id="Y8d-ne-QbY"/>
                                     <constraint firstItem="Ou1-th-nen" firstAttribute="leading" secondItem="IB8-Qd-lLP" secondAttribute="leading" id="g3O-CU-8KL"/>
+                                    <constraint firstItem="pVc-7y-JEh" firstAttribute="leading" secondItem="IB8-Qd-lLP" secondAttribute="leading" constant="20" id="zjr-ee-bQ2"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -194,14 +201,14 @@
                             <constraint firstItem="IB8-Qd-lLP" firstAttribute="leading" secondItem="G1e-9B-V8w" secondAttribute="leading" id="OcR-aA-wiv"/>
                             <constraint firstItem="6iK-24-1MH" firstAttribute="height" secondItem="G1e-9B-V8w" secondAttribute="height" id="eNZ-EC-XX6"/>
                             <constraint firstAttribute="trailing" secondItem="IB8-Qd-lLP" secondAttribute="trailing" id="wd2-2e-RJf"/>
-                            <constraint firstItem="IB8-Qd-lLP" firstAttribute="top" secondItem="G1e-9B-V8w" secondAttribute="top" id="wfM-CI-hHM"/>
+                            <constraint firstItem="IB8-Qd-lLP" firstAttribute="top" secondItem="sIj-Bl-rvQ" secondAttribute="top" id="wfM-CI-hHM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sIj-Bl-rvQ"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KQd-is-7id" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2307.2463768115945" y="831.69642857142856"/>
+            <point key="canvasLocation" x="-1577" y="635"/>
         </scene>
         <!--Login Form-->
         <scene sceneID="tne-QT-ifu">
@@ -289,7 +296,6 @@
                                         <state key="normal" title="LOGIN"/>
                                         <connections>
                                             <action selector="loginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qAS-yL-SRP"/>
-                                            <segue destination="dVY-Jf-cBx" kind="show" identifier="ShowTabBarController" id="006-5Y-pmD"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCT-aX-ZCK" userLabel="ButtonForgotPswd">
@@ -730,7 +736,4 @@
         <image name="logo" width="102" height="59"/>
         <image name="top" width="1600" height="426"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="pMX-T2-g4l"/>
-    </inferredMetricsTieBreakers>
 </document>
