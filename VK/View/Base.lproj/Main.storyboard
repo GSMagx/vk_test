@@ -151,12 +151,18 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardAppearance="alert" textContentType="username"/>
+                                        <connections>
+                                            <action selector="enterPressedKeyboardlogin:" destination="NIj-PI-QFd" eventType="editingDidEnd" id="S3q-eh-nXV"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="12345" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4wN-nB-jbF">
                                         <rect key="frame" x="80" y="237" width="254" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                        <connections>
+                                            <action selector="enterPressedKeyboardPass:" destination="NIj-PI-QFd" eventType="editingDidEnd" id="EoI-ig-UBa"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8y-BZ-pfN">
                                         <rect key="frame" x="115" y="325" width="184" height="30"/>
