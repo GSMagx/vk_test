@@ -10,7 +10,7 @@ import UIKit
 
 @IBDesignable class LikeControl: UIStackView {
     
-    @IBInspectable var like = 5
+    @IBInspectable var like = 0
 
     var likeActive = false
     var button = UIButton()
@@ -38,9 +38,7 @@ import UIKit
         super.init(frame: frame)
         setupButtons()
     }
-    
-    
-    
+
     required init(coder: NSCoder) {
         super.init(coder: coder)
         setupButtons()
@@ -72,9 +70,6 @@ import UIKit
     }
     
     @objc func likeButtonTapped(button: UIButton) {
-        //        guard let like = ratingMyNews[] else {
-        //            fatalError("The button, \(button), is not in the ratingButtons array: \(ratingMyNews)")
-        print("Button pressed 👍")
         if !likeActive {
             likeActive = true
             like += 1
@@ -87,3 +82,4 @@ import UIKit
     
     
 }
+

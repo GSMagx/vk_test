@@ -9,13 +9,7 @@
 import UIKit
 
 class MyGroupsController: UITableViewController {
-    
-    
-//    var myGroups = ["Swift Programming",
-//                    "X-Plane 11",
-//                    "Hacking",
-//                    "English"
-//    ]
+
     var myGroups = [String]()
     var myGroupsFoto = [
         "Swift Programming" :"Swift Programming",
@@ -69,7 +63,7 @@ class MyGroupsController: UITableViewController {
             photo.image = UIImage(named: nameAvatar)
             photo.frame = borderView.bounds
             borderView.addSubview(photo)
-            //cell.fotoGroup.image = UIImage(named: nameAvatar)
+        
         }
         return cell
     }

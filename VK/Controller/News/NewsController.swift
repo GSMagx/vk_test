@@ -32,24 +32,19 @@ class NewsController: UITableViewController {
     
     var allMyNews = ["Swift Programming": "After officially delivering Swift 4.2, the Swift team is now focusing on Swift 5 by kicking off the final phase of its release process. Planned to be released early 2019, Swift 5 aims to bring ABI stability to the language while preserving source compatibility."]
   
-    
-    
-    
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
     }
     
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return allMyNews.count
     }
     
@@ -78,12 +73,8 @@ class NewsController: UITableViewController {
             photo.image = UIImage(named: nameAvatar)
             photo.frame = borderView.bounds
             borderView.addSubview(photo)
-            //cell.groupNewsFoto.image = UIImage(named: nameAvatar)
-            
         }
-        
-        
-        
+   
         if let text = allMyNews[group] {
             cell.textNews.text = text
             
@@ -91,6 +82,4 @@ class NewsController: UITableViewController {
         }
         return cell
     }
-
-
 }

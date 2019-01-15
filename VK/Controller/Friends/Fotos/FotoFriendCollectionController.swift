@@ -33,7 +33,7 @@ class FotoFriendCollectionController: UICollectionViewController {
             
         let foto = fotoDelegate[indexPath.row]
         cell.allFoto.image = UIImage(named: foto)
-//        cell.fotoLabelName.text = text
+
         
         return cell
     }

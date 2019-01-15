@@ -89,12 +89,12 @@ class AllGroupsController: UITableViewController {
     
 
     func searchBarIsEmpty() -> Bool {
-        // Returns true if the text is empty or nil
+
         return searchController.searchBar.text?.isEmpty ?? true
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+        
         return 1
     }
     
@@ -109,8 +109,7 @@ class AllGroupsController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AllGroupsCell", for: indexPath) as! AllGroupsCell
-//        let group = allGroups[indexPath.row]
-//            cell.allGroupsName.text = group
+
      if searchActive {
         cell.allGroupsName.text = filteredGroup[indexPath.row]
         if let nameAvatar = allGroupsFoto[filteredGroup[indexPath.row]] {
@@ -165,8 +164,5 @@ class AllGroupsController: UITableViewController {
         
         return cell
     }
-    
-
-    
 
 }
