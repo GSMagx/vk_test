@@ -10,7 +10,7 @@ import UIKit
 
 @IBDesignable class LikeControl: UIStackView {
     
-    @IBInspectable var like = 45
+    @IBInspectable var like = 5
 
     var likeActive = false
     var button = UIButton()
