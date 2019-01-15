@@ -10,28 +10,6 @@ import UIKit
 
 class MyGroupsController: UITableViewController {
     
-    @IBAction func addGroup(segue: UIStoryboardSegue) {
-        // Проверяем идентификатор, чтобы убедится, что это нужный переход
-        if segue.identifier == "addGroup" {
-            // Получаем ссылку на контроллер, с которого осуществлен переход
-            let allGroupsController = segue.source as! AllGroupsController
-            // Получаем группу по индексу
-            if let indexPath = allGroupsController.tableView.indexPathForSelectedRow {
-                
-                let group = allGroupsController.allGroups[indexPath.row]
-                let groupFoto = allGroupsController.allGroupsFoto[group]
-                // прверяем нет ли выбранных повторных групп
-                if !myGroups.contains(group) {
-                    myGroups.append(group)
-                    tableView.reloadData()
-                    myGroupsFoto[group] = groupFoto
-                    tableView.reloadData()
-                }
-            }
-            
-        }
-        
-    }
     
     var myGroups = ["Swift Programming",
                     "X-Plane 11",
@@ -105,6 +83,29 @@ class MyGroupsController: UITableViewController {
         
     }
     
+    @IBAction func addGroup(segue: UIStoryboardSegue) {
+        // Проверяем идентификатор, чтобы убедится, что это нужный переход
+        if segue.identifier == "addGroup" {
+            // Получаем ссылку на контроллер, с которого осуществлен переход
+            let allGroupsController = segue.source as! AllGroupsController
+            // Получаем группу по индексу
+            if let indexPath = allGroupsController.tableView.indexPathForSelectedRow {
+                
+                let group = allGroupsController.allGroups[indexPath.row]
+                let groupFoto = allGroupsController.allGroupsFoto[group]
+                // прверяем нет ли выбранных повторных групп
+                if !myGroups.contains(group) {
+                    myGroups.append(group)
+                    tableView.reloadData()
+                    myGroupsFoto[group] = groupFoto
+                    tableView.reloadData()
+                }
+            }
+            
+        }
+        
+    }
+
 
 
 }
