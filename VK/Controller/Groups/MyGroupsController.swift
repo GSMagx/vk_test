@@ -11,12 +11,12 @@ import UIKit
 class MyGroupsController: UITableViewController {
     
     
-    var myGroups = ["Swift Programming",
-                    "X-Plane 11",
-                    "Hacking",
-                    "English"
-    ]
-    
+//    var myGroups = ["Swift Programming",
+//                    "X-Plane 11",
+//                    "Hacking",
+//                    "English"
+//    ]
+    var myGroups = [String]()
     var myGroupsFoto = [
         "Swift Programming" :"Swift Programming",
         "X-Plane 11"        :"X-Plane 11",

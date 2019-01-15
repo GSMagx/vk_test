@@ -360,8 +360,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="GV5-Ch-UcQ">
-                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" showsCancelButton="YES" id="GV5-Ch-UcQ">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
                             <connections>
@@ -420,22 +420,6 @@
                 <exit id="Zqo-Gt-7Fk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2444.9275362318845" y="-141.29464285714286"/>
-        </scene>
-        <!--Notification-->
-        <scene sceneID="zxw-Ee-UC8">
-            <objects>
-                <viewController id="BMb-uD-PGQ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="srt-F6-koj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.0" blue="0.13025489239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="yP2-wU-BhM"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Notification" id="ZMk-ES-tsB"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fQD-SC-K4t" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1662" y="1465"/>
         </scene>
         <!--Message-->
         <scene sceneID="ASf-TL-fPv">
@@ -506,7 +490,7 @@
         <scene sceneID="9v7-s6-onJ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PTs-D6-usZ" userLabel="Notification Navigation" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Notification" id="fAz-5w-bp7"/>
+                    <tabBarItem key="tabBarItem" title="News" id="fAz-5w-bp7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sDw-sk-diU">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -514,7 +498,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BMb-uD-PGQ" kind="relationship" relationship="rootViewController" id="jDl-IJ-2T7"/>
+                        <segue destination="nEg-gH-Vpd" kind="relationship" relationship="rootViewController" id="WlB-cJ-vR7"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="43h-H6-NkR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -599,6 +583,76 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t6A-RV-DZu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2534" y="2206"/>
+        </scene>
+        <!--News Controller-->
+        <scene sceneID="h5C-Hc-bY3">
+            <objects>
+                <tableViewController id="nEg-gH-Vpd" customClass="NewsController" customModule="VK" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cph-Nb-J5d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsCell" rowHeight="150" id="2fl-2E-ciu" customClass="MyNewsCell" customModule="VK" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="150"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2fl-2E-ciu" id="rW8-zH-XDE">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="149.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qEt-2t-UR5">
+                                            <rect key="frame" x="7" y="0.0" width="54" height="54"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdl-6o-5xc">
+                                            <rect key="frame" x="79" y="11" width="315" height="12"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Od-iv-uqm">
+                                            <rect key="frame" x="7" y="61" width="291" height="26"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Chj-6F-cEl" customClass="LikeControl" customModule="VK" customModuleProvider="target">
+                                            <rect key="frame" x="20" y="87" width="43" height="42"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </stackView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="3" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="LikeCell" destination="Chj-6F-cEl" id="kMq-Jx-7kS"/>
+                                    <outlet property="groupNewsFoto" destination="qEt-2t-UR5" id="8CL-ZB-0n1"/>
+                                    <outlet property="groupNewsName" destination="xdl-6o-5xc" id="ylE-en-ngG"/>
+                                    <outlet property="textNews" destination="1Od-iv-uqm" id="8jG-xz-ofj"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="nEg-gH-Vpd" id="ZSI-tk-1s6"/>
+                            <outlet property="delegate" destination="nEg-gH-Vpd" id="4xH-hq-dyE"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="aCa-cf-Yzq" userLabel="News"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FgE-Gi-mya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1660.8695652173915" y="1469.8660714285713"/>
         </scene>
     </scenes>
     <resources>

@@ -11,7 +11,7 @@ import UIKit
 extension AllGroupsController: UISearchResultsUpdating {
     // MARK: - UISearchResultsUpdating Delegate
     func updateSearchResults(for searchController: UISearchController) {
-        // TODO
+        
     }
 }
 
