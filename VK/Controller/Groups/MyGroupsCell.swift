@@ -12,6 +12,16 @@ class MyGroupsCell: UITableViewCell {
 
     @IBOutlet weak var myGroupsImage: UIImageView!
     @IBOutlet weak var myGroupsName: UILabel!
+    
+    @IBInspectable var shadowOffset: CGSize = CGSize(width: 3, height: 3)
+ 
+    /// Прозрачность тени
+    @IBInspectable var shadowOpacity: Float = 0.3
+  
+    /// Радиус блура тени
+    @IBInspectable var shadowRadius: CGFloat = 10
+   
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

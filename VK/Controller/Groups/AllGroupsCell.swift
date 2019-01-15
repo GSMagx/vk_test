@@ -8,10 +8,24 @@
 
 import UIKit
 
-class AllGroupsCell: UITableViewCell {
+@IBDesignable class AllGroupsCell: UITableViewCell {
     @IBOutlet weak var allGroupsImage: UIImageView!
     
     @IBOutlet weak var allGroupsName: UILabel!
+    
+    override class var layerClass: AnyClass {
+        return CAShapeLayer.self
+    }
+    @IBInspectable var shadowOffset: CGSize = CGSize(width: 3, height: 3)
+    
+    /// Прозрачность тени
+    @IBInspectable var shadowOpacity: Float = 0.8
+    
+    /// Радиус блура тени
+    @IBInspectable var shadowRadius: CGFloat = 10
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,7 +34,7 @@ class AllGroupsCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+    
     }
 
 }

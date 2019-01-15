@@ -13,7 +13,8 @@ class LoginFormController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var loginInput: LoginTextField!
     @IBOutlet weak var passwordInput: LoginTextField!
-    @IBOutlet weak var warningLabel:  UILabel!
+    
+   // @IBOutlet weak var warningLabel:  UILabel!
     
     @objc func keybordWasShow(notification: Notification) {
         //получаем размер клавиатуры
@@ -114,10 +115,10 @@ class LoginFormController: UIViewController {
         performSegue(withIdentifier: "ShowTabBarController", sender: checkUsersData())
     }
     
-    @IBAction func regButtonAction(_ sender: Any) {
-    }
-    @IBAction func forgotPasButtonAction(_ sender: Any) {
-    }
+  //  @IBAction func regButtonAction(_ sender: Any) {
+   // }
+  //  @IBAction func forgotPasButtonAction(_ sender: Any) {
+ //   }
 }
 
 //class ButtonWithShadow: UIButton {
