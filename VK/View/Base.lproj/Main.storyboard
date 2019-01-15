@@ -588,7 +588,7 @@
         <scene sceneID="h5C-Hc-bY3">
             <objects>
                 <tableViewController id="nEg-gH-Vpd" customClass="NewsController" customModule="VK" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cph-Nb-J5d">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cph-Nb-J5d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -600,33 +600,49 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="129.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qEt-2t-UR5">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qEt-2t-UR5">
                                             <rect key="frame" x="10" y="10" width="50" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="50" id="FNr-UJ-8IU"/>
                                                 <constraint firstAttribute="height" constant="50" id="aKS-9W-1tD"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdl-6o-5xc">
-                                            <rect key="frame" x="79" y="11" width="315" height="12"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdl-6o-5xc">
+                                            <rect key="frame" x="84" y="11" width="310" height="12"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Od-iv-uqm">
+                                            <rect key="frame" x="20" y="64" width="384" height="12"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Od-iv-uqm">
-                                            <rect key="frame" x="7" y="68" width="291" height="9"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Chj-6F-cEl" customClass="LikeControl" customModule="VK" customModuleProvider="target">
-                                            <rect key="frame" x="57" y="93" width="55" height="44"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Chj-6F-cEl" customClass="LikeControl" customModule="VK" customModuleProvider="target">
+                                            <rect key="frame" x="8" y="78" width="55" height="41"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="41" id="jRH-zL-6QN"/>
+                                                <constraint firstAttribute="width" constant="55" id="r12-XP-cxt"/>
+                                            </constraints>
                                         </stackView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="1Od-iv-uqm" firstAttribute="top" secondItem="qEt-2t-UR5" secondAttribute="bottom" constant="4" id="340-bb-3Pp"/>
+                                        <constraint firstItem="xdl-6o-5xc" firstAttribute="leading" secondItem="qEt-2t-UR5" secondAttribute="trailing" constant="24" id="7MC-xK-74X"/>
+                                        <constraint firstItem="qEt-2t-UR5" firstAttribute="top" secondItem="rW8-zH-XDE" secondAttribute="topMargin" constant="-1" id="SvW-Nf-FC4"/>
+                                        <constraint firstItem="Chj-6F-cEl" firstAttribute="leading" secondItem="qEt-2t-UR5" secondAttribute="trailing" constant="-52" id="ala-uf-45V"/>
+                                        <constraint firstItem="Chj-6F-cEl" firstAttribute="bottom" secondItem="rW8-zH-XDE" secondAttribute="bottomMargin" id="k4m-AW-DNx"/>
+                                        <constraint firstItem="qEt-2t-UR5" firstAttribute="leading" secondItem="rW8-zH-XDE" secondAttribute="leadingMargin" constant="-10" id="och-Va-zSz"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <constraints>
+                                    <constraint firstItem="xdl-6o-5xc" firstAttribute="leading" secondItem="2fl-2E-ciu" secondAttribute="leading" constant="84" id="Cvg-bB-gSy"/>
+                                    <constraint firstItem="xdl-6o-5xc" firstAttribute="top" secondItem="2fl-2E-ciu" secondAttribute="top" constant="11" id="IDT-Wc-G7o"/>
+                                    <constraint firstAttribute="trailing" secondItem="1Od-iv-uqm" secondAttribute="trailing" constant="10" id="Yvg-wY-0iT"/>
+                                    <constraint firstAttribute="trailing" secondItem="xdl-6o-5xc" secondAttribute="trailing" constant="20" id="dBm-mc-FXd"/>
+                                    <constraint firstItem="1Od-iv-uqm" firstAttribute="leading" secondItem="2fl-2E-ciu" secondAttribute="leading" constant="20" id="obS-t6-mnd"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
                                         <size key="value" width="3" height="3"/>
