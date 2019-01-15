@@ -261,7 +261,7 @@
         <scene sceneID="BpL-fo-BgH">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jXB-c4-JKS" userLabel="Friends Navigation" colorLabel="IBBuiltInLabel-Blue" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Friends" id="xfh-g8-xgf"/>
+                    <tabBarItem key="tabBarItem" title="Friends" image="Friends_ico" landscapeImage="Friends_ico" id="xfh-g8-xgf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Yqg-QF-pb2">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -280,7 +280,7 @@
         <scene sceneID="dxW-dd-GcN">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T4Y-RJ-e7Y" userLabel="Groups Navigations" colorLabel="IBBuiltInLabel-Green" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Groups" id="xn2-Rz-1Ub"/>
+                    <tabBarItem key="tabBarItem" title="Groups" image="Groups_ico" landscapeImage="Groups_ico" id="xn2-Rz-1Ub"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZHD-3K-Qqm">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -431,7 +431,7 @@
         <scene sceneID="ASf-TL-fPv">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d0S-as-fbx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Message" id="Qf4-On-leV"/>
+                    <tabBarItem key="tabBarItem" title="Message" image="Messages_ico" landscapeImage="Messages_ico" id="Qf4-On-leV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FEg-JI-MFv">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -496,7 +496,7 @@
         <scene sceneID="9v7-s6-onJ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PTs-D6-usZ" userLabel="Notification Navigation" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="News" id="fAz-5w-bp7"/>
+                    <tabBarItem key="tabBarItem" title="News" image="News_ico" landscapeImage="News_ico" id="fAz-5w-bp7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sDw-sk-diU">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -515,7 +515,7 @@
         <scene sceneID="xDv-xW-Jr2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cD7-Jr-A6P" userLabel="Setting Navigation" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" id="s4c-c7-bBy"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="Settings_ico" landscapeImage="Settings_ico" id="s4c-c7-bBy"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4k5-WE-b7e">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -681,6 +681,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Friends_ico" width="24" height="24"/>
+        <image name="Groups_ico" width="24" height="24"/>
+        <image name="Messages_ico" width="37.5" height="37.5"/>
+        <image name="News_ico" width="24" height="24"/>
+        <image name="Settings_ico" width="24" height="24"/>
         <image name="logo" width="102" height="59"/>
     </resources>
 </document>
