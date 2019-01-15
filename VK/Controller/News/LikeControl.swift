@@ -61,7 +61,7 @@ import UIKit
             button.addTarget(self, action: #selector(LikeControl.likeButtonTapped(button:)), for: .touchUpInside)
             button.setImage(emptyHeart, for: .normal)
             button.setImage(filledHeart, for: .selected)
-            label.textColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+            label.textColor = #colorLiteral(red: 0.1215686277, green: 0.01176470611, blue: 0.4235294163, alpha: 1)
         } else {
             button.addTarget(self, action: #selector(LikeControl.likeButtonTapped(button:)), for: .touchUpInside)
             button.setImage(filledHeart, for: .normal)

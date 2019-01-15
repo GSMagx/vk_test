@@ -10,21 +10,35 @@ import UIKit
 
 class NewsController: UITableViewController {
 
-    var allGroups = ["Абстракция", "Новый год", "Цветы", "Любовь", "Котики", "Собачки", "Кролики"]
-    var allGroupsFoto = ["Абстракция": "line", "Новый год": "fir", "Цветы": "rose", "Любовь": "heart", "Котики": "red", "Собачки": "green", "Кролики": "orange"]
-    var allMyNews = ["Абстракция": "Идет набор в онлайн-университет для программистов от Mail Ru Group: обучение с нуля, упор на практику, совместная разработка, наставник и гарантия трудоустройства. В вашем обучении участвуют крупнейшие IT-компании России: Avito, Альфа-банк."]
-    //, "Новый год": "Жареные креветки в панцире. Просто, быстро - жарим креветки без очистки.", "Любовь": "Мы не знаем, что будет завтра. Пусть оно просто будет. И пусть в нём будут все те, кто нам дорог...", "Цветы": "У животных тоже есть дружба)"]
+    var allGroups = ["Swift Programming",
+                     "Hobbys",
+                     "X-Plane 11",
+                     "Hacking",
+                     "Dancing",
+                     "Job IT",
+                     "Russia Today",
+                     "English"
+    ]
+    var allGroupsFoto = [
+        "Swift Programming"    :"Swift Programming",
+        "Hobbys"               :"Hobbys",
+        "X-Plane 11"           :"X-Plane 11",
+        "Hacking"              :"Hacking",
+        "Dancing"              :"Dancing",
+        "Job IT"               :"Job IT",
+        "Russia Today"         :"Russia Today",
+        "English"              :"English"
+    ]
+    
+    var allMyNews = ["Swift Programming": "After officially delivering Swift 4.2, the Swift team is now focusing on Swift 5 by kicking off the final phase of its release process. Planned to be released early 2019, Swift 5 aims to bring ABI stability to the language while preserving source compatibility."]
+  
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+       
     }
     
     // MARK: - Table view data source
