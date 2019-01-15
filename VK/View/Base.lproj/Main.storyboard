@@ -193,6 +193,7 @@
                                     <constraint firstItem="u8y-BZ-pfN" firstAttribute="leading" secondItem="6iK-24-1MH" secondAttribute="trailing" constant="115" id="Ma6-XU-5nU"/>
                                     <constraint firstAttribute="bottom" secondItem="6iK-24-1MH" secondAttribute="bottom" id="PtU-bn-ldV"/>
                                     <constraint firstItem="n2h-vj-Y3Z" firstAttribute="top" secondItem="IB8-Qd-lLP" secondAttribute="top" constant="50" id="Vvm-oc-yf9"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="UCz-ay-Vxu" secondAttribute="trailing" constant="20" symbolic="YES" id="eUU-Qe-rbs"/>
                                     <constraint firstItem="9o1-0X-Z0s" firstAttribute="leading" secondItem="6iK-24-1MH" secondAttribute="trailing" constant="84" id="eh4-kI-huU"/>
                                     <constraint firstItem="Ou1-th-nen" firstAttribute="leading" secondItem="IB8-Qd-lLP" secondAttribute="leading" id="g3O-CU-8KL"/>
                                     <constraint firstItem="n2h-vj-Y3Z" firstAttribute="centerX" secondItem="IB8-Qd-lLP" secondAttribute="centerX" id="gs9-nN-Eue"/>
@@ -203,6 +204,7 @@
                                     <constraint firstItem="4wN-nB-jbF" firstAttribute="top" secondItem="klC-EI-VQg" secondAttribute="bottom" constant="55" id="oH6-Wi-3Yw"/>
                                     <constraint firstItem="4wN-nB-jbF" firstAttribute="leading" secondItem="IB8-Qd-lLP" secondAttribute="leading" constant="80" id="tHq-aX-zzQ"/>
                                     <constraint firstAttribute="trailing" secondItem="klC-EI-VQg" secondAttribute="trailing" constant="80" id="yc2-v9-O9K"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9o1-0X-Z0s" secondAttribute="trailing" constant="20" symbolic="YES" id="yc8-fa-4bf"/>
                                     <constraint firstAttribute="trailing" secondItem="4wN-nB-jbF" secondAttribute="trailing" constant="80" id="ylX-Rg-wTx"/>
                                 </constraints>
                             </scrollView>
@@ -359,7 +361,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" id="GV5-Ch-UcQ">
-                            <rect key="frame" x="0.0" y="0.0" width="60" height="44"/>
+                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
                             <connections>
