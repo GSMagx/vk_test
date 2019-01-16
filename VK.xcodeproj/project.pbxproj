@@ -24,6 +24,7 @@
 		FA60DEA021EE230C001DB6FB /* MyNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60DE9F21EE230C001DB6FB /* MyNewsCell.swift */; };
 		FA60DEA221EE2326001DB6FB /* NewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60DEA121EE2326001DB6FB /* NewsController.swift */; };
 		FA60DEA521EE259F001DB6FB /* LikeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60DEA421EE259F001DB6FB /* LikeControl.swift */; };
+		FA6243F821EF064300B57CBA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6243F721EF064300B57CBA /* SettingsViewController.swift */; };
 		FA7B5ABF21EA243900345D6D /* MyFriendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B5ABE21EA243900345D6D /* MyFriendsController.swift */; };
 		FA7B5AC221EA273400345D6D /* MyFriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B5AC121EA273400345D6D /* MyFriendsCell.swift */; };
 		FA7B5AC421EA2DF900345D6D /* FotoFriendCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B5AC321EA2DF900345D6D /* FotoFriendCollectionController.swift */; };
@@ -65,6 +66,7 @@
 		FA60DE9F21EE230C001DB6FB /* MyNewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNewsCell.swift; sourceTree = "<group>"; };
 		FA60DEA121EE2326001DB6FB /* NewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsController.swift; sourceTree = "<group>"; };
 		FA60DEA421EE259F001DB6FB /* LikeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeControl.swift; sourceTree = "<group>"; };
+		FA6243F721EF064300B57CBA /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FA7B5ABE21EA243900345D6D /* MyFriendsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendsController.swift; sourceTree = "<group>"; };
 		FA7B5AC121EA273400345D6D /* MyFriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendsCell.swift; sourceTree = "<group>"; };
 		FA7B5AC321EA2DF900345D6D /* FotoFriendCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoFriendCollectionController.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				FA2A561D21C56956005C7720 /* Main.storyboard */,
+				FA6243F721EF064300B57CBA /* SettingsViewController.swift */,
 				FA2A562521C5695A005C7720 /* LaunchScreen.storyboard */,
 			);
 			path = View;
@@ -325,6 +328,7 @@
 			files = (
 				FA2A561C21C56956005C7720 /* LoginFormController.swift in Sources */,
 				FA7B5AC621EA2E1A00345D6D /* FotoCollectionCell.swift in Sources */,
+				FA6243F821EF064300B57CBA /* SettingsViewController.swift in Sources */,
 				FA60DEA521EE259F001DB6FB /* LikeControl.swift in Sources */,
 				FA43E20821EC8582009D3A95 /* AllGroupsController.swift in Sources */,
 				FA43E20421EC8559009D3A95 /* MyGroupsCell.swift in Sources */,

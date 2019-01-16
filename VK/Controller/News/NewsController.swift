@@ -30,7 +30,8 @@ class NewsController: UITableViewController {
         "English"              :"English"
     ]
     
-    var allMyNews = ["Swift Programming": "After officially delivering Swift 4.2, the Swift team is now focusing on Swift 5 by kicking off the final phase of its release process. Planned to be released early 2019, Swift 5 aims to bring ABI stability to the language while preserving source compatibility."]
+    var allMyNews = ["Swift Programming": "After officially delivering Swift 4.2, the Swift team is now focusing on Swift 5 by kicking off the final phase of its release process. Planned to be released early 2019, Swift 5 aims to bring ABI stability to the language while preserving source compatibility.",
+        "Hobbys": "Police Can't Force You To Unlock Your Phone Using Face or Fingerprint Scan."]
   
   
     override func viewDidLoad() {

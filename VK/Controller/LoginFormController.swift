@@ -75,6 +75,7 @@ class LoginFormController: UIViewController {
     func checkUsersData() -> Bool {
         guard let login = loginInput.text, let password = passwordInput.text else {return false}
         if login == "Admin" && password == "12345" {
+            
             return true
         } else {
         showLoginError()
