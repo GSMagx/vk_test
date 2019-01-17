@@ -69,6 +69,7 @@ class NewsController: UITableViewController {
             borderView.layer.masksToBounds = true
             cell.groupNewsFoto.addSubview(borderView)
             
+            
             // add subcontent
             let photo = UIImageView()
             photo.image = UIImage(named: nameAvatar)

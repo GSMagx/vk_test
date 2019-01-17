@@ -29,9 +29,7 @@ class SettingsViewController: UIViewController {
             backgroundColorText.textColor = .white
             tabBarController?.tabBar.barStyle = .black
             
-            
-            
-           
+
         } else {
             subView.isHidden = true
             view.backgroundColor = .white
