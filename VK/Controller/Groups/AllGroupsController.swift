@@ -8,18 +8,19 @@
 
 import UIKit
 
-extension AllGroupsController: UISearchResultsUpdating {
+//extension AllGroupsController: UISearchResultsUpdating {
+
     // MARK: - UISearchResultsUpdating Delegate
-    func updateSearchResults(for searchController: UISearchController) {
-        
-    }
-}
+//    func updateSearchResults(for searchController: UISearchController) {
+//
+//    }
+//}
 
 class AllGroupsController: UITableViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
     
-    let searchController = UISearchController(searchResultsController: nil)
+//    let searchController = UISearchController(searchResultsController: nil)
     
     var allGroups = ["Swift Programming",
                      "Hobbys",
@@ -50,49 +51,6 @@ class AllGroupsController: UITableViewController {
     
     }
     
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        if searchText != "" {
-            filteredGroup = allGroups.filter({(text) -> Bool in
-                let tmp: NSString = text as NSString
-                let range = tmp.range(of: searchText, options: NSString.CompareOptions.caseInsensitive)
-                return range.location != NSNotFound
-            })
-            searchActive = true
-            tableView.reloadData()}
-        else {
-            searchActive = false
-            tableView.reloadData()
-        }
-    }
-    
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        searchBar.text = ""
-        searchActive = false
-        tableView.reloadData()
-    }
-    
-
-    // MARK: - Table view data source
-
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return allGroupsFoto.count
-    }
-    
-
-    func searchBarIsEmpty() -> Bool {
-
-        return searchController.searchBar.text?.isEmpty ?? true
-    }
-    
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        
-        return 1
-    }
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if searchActive {
@@ -101,6 +59,51 @@ class AllGroupsController: UITableViewController {
             return allGroups.count
         }
     }
+    
+//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+//        if searchText != "" {
+//            filteredGroup = allGroups.filter({(text) -> Bool in
+//                let tmp: NSString = text as NSString
+//                let range = tmp.range(of: searchText, options: NSString.CompareOptions.caseInsensitive)
+//                return range.location != NSNotFound
+//            })
+//            searchActive = true
+//            tableView.reloadData()}
+//        else {
+//            searchActive = false
+//            tableView.reloadData()
+//        }
+//    }
+    
+//    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+//        searchBar.text = ""
+//        searchActive = false
+//        tableView.reloadData()
+//    }
+    
+
+    // MARK: - Table view data source
+
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+//    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return allGroupsFoto.count
+//    }
+    
+
+//    func searchBarIsEmpty() -> Bool {
+//
+//        return searchController.searchBar.text?.isEmpty ?? true
+//    }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        
+        return 1
+    }
+    
+  
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AllGroupsCell", for: indexPath) as! AllGroupsCell
@@ -131,8 +134,9 @@ class AllGroupsController: UITableViewController {
             photo.frame = borderView.bounds
             borderView.addSubview(photo)
         }
-        } else { cell.allGroupsName.text = allGroups[indexPath.row]
-            //cell.allGroupName.text = group
+        } else {
+            cell.allGroupsName.text = allGroups[indexPath.row]
+        
             if let nameAvatar = allGroupsFoto[allGroups[indexPath.row]] {
                 cell.allGroupsImage.backgroundColor = UIColor.clear
                 cell.allGroupsImage.layer.shadowColor = UIColor.black.cgColor
@@ -161,3 +165,18 @@ class AllGroupsController: UITableViewController {
     }
 
 }
+
+extension AllGroupsController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        filteredGroup = allGroups.filter({$0.lowercased().prefix(searchText.count) == searchText.lowercased() })
+        searchActive = true
+        tableView.reloadData()
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchActive = false
+        searchBar.text = ""
+        tableView.reloadData()
+    }
+}
+
