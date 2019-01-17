@@ -27,13 +27,18 @@ class SettingsViewController: UIViewController {
             view.backgroundColor = .black
             labelSetting.textColor = .white
             backgroundColorText.textColor = .white
+            tabBarController?.tabBar.barStyle = .black
+            
+            
+            
            
         } else {
             subView.isHidden = true
             view.backgroundColor = .white
             labelSetting.textColor = .black
             backgroundColorText.textColor = .black
-         
+            tabBarController?.tabBar.barStyle = .default
+          
         }
         
     }

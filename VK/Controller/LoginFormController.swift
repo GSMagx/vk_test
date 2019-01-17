@@ -93,7 +93,7 @@ class LoginFormController: UIViewController {
 
     @IBAction func loginButtonAction(_ sender: Any) {
         
-//      checkUsersData()
+     
 //
 //        let login = loginInput.text!
 //        let password = passwordInput.text!
@@ -105,10 +105,6 @@ class LoginFormController: UIViewController {
 //            warningLabel.textColor = .red
 //            warningLabel.text = "password or login incorrect"
        }
-//    @IBAction func enterPressedKeyboardLogin(_ sender:
-//        Any) {
-//       performSegue(withIdentifier: "ShowTabBarController", sender: checkUsersData())
-//    }
     @IBAction func enterPressedKeyboardlogin(_ sender: Any) {
         performSegue(withIdentifier: "ShowTabBarController", sender: checkUsersData())
     }
@@ -122,18 +118,4 @@ class LoginFormController: UIViewController {
  //   }
 }
 
-//class ButtonWithShadow: UIButton {
-//
-//    override func draw(_ rect: CGRect) {
-//        updateLayerProperties()
-//    }
-//
-//    func updateLayerProperties() {
-//        self.layer.shadowColor = UIColor(red: 1, green: 1, blue: 2, alpha: 0.25).cgColor
-//        self.layer.shadowOffset = CGSize(width: 1, height: 4)
-//        self.layer.shadowOpacity = 1.0
-//        self.layer.shadowRadius = 4.0
-//        self.layer.masksToBounds = false
-//    }
-//
-//}
+
