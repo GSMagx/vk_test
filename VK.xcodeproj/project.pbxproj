@@ -21,6 +21,7 @@
 		FA43E20421EC8559009D3A95 /* MyGroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43E20321EC8559009D3A95 /* MyGroupsCell.swift */; };
 		FA43E20621EC856E009D3A95 /* AllGroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43E20521EC856E009D3A95 /* AllGroupsCell.swift */; };
 		FA43E20821EC8582009D3A95 /* AllGroupsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43E20721EC8582009D3A95 /* AllGroupsController.swift */; };
+		FA459A9021FA3A5D0014B043 /* CircularShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA459A8F21FA3A5D0014B043 /* CircularShadowView.swift */; };
 		FA60DEA021EE230C001DB6FB /* MyNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60DE9F21EE230C001DB6FB /* MyNewsCell.swift */; };
 		FA60DEA221EE2326001DB6FB /* NewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60DEA121EE2326001DB6FB /* NewsController.swift */; };
 		FA60DEA521EE259F001DB6FB /* LikeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60DEA421EE259F001DB6FB /* LikeControl.swift */; };
@@ -63,6 +64,7 @@
 		FA43E20321EC8559009D3A95 /* MyGroupsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsCell.swift; sourceTree = "<group>"; };
 		FA43E20521EC856E009D3A95 /* AllGroupsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsCell.swift; sourceTree = "<group>"; };
 		FA43E20721EC8582009D3A95 /* AllGroupsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsController.swift; sourceTree = "<group>"; };
+		FA459A8F21FA3A5D0014B043 /* CircularShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularShadowView.swift; sourceTree = "<group>"; };
 		FA60DE9F21EE230C001DB6FB /* MyNewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNewsCell.swift; sourceTree = "<group>"; };
 		FA60DEA121EE2326001DB6FB /* NewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsController.swift; sourceTree = "<group>"; };
 		FA60DEA421EE259F001DB6FB /* LikeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeControl.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				FA2A561D21C56956005C7720 /* Main.storyboard */,
+				FA459A8F21FA3A5D0014B043 /* CircularShadowView.swift */,
 				FA6243F721EF064300B57CBA /* SettingsViewController.swift */,
 				FA2A562521C5695A005C7720 /* LaunchScreen.storyboard */,
 			);
@@ -339,6 +342,7 @@
 				FA43E20621EC856E009D3A95 /* AllGroupsCell.swift in Sources */,
 				FA7B5ABF21EA243900345D6D /* MyFriendsController.swift in Sources */,
 				FA60DEA021EE230C001DB6FB /* MyNewsCell.swift in Sources */,
+				FA459A9021FA3A5D0014B043 /* CircularShadowView.swift in Sources */,
 				FA7B5AC421EA2DF900345D6D /* FotoFriendCollectionController.swift in Sources */,
 				FAABD5FF21E7CDC900524134 /* AllMessageTabelViewController.swift in Sources */,
 				FA25499221E7DC9400E2EFEB /* TableViewCellMyMessage.swift in Sources */,

@@ -78,8 +78,10 @@ class MyGroupsController: UITableViewController {
     }
     
     @IBAction func addGroup(segue: UIStoryboardSegue) {
+        
         // Проверяем идентификатор, чтобы убедится, что это нужный переход
         if segue.identifier == "addGroup" {
+            
             // Получаем ссылку на контроллер, с которого осуществлен переход
             let allGroupsController = segue.source as! AllGroupsController
             // Получаем группу по индексу
@@ -87,6 +89,10 @@ class MyGroupsController: UITableViewController {
                 
                 let group = allGroupsController.allGroups[indexPath.row]
                 let groupFoto = allGroupsController.allGroupsFoto[group]
+                
+                UIView.transition(with: self.view, duration: 0.5 , options: .transitionFlipFromBottom, animations: {
+                }, completion: nil)
+                
                 // прверяем нет ли выбранных повторных групп
                 if !myGroups.contains(group) {
                     myGroups.append(group)

@@ -23,7 +23,7 @@ class SettingsViewController: UIViewController {
     @IBAction func toggelActionColorBackground(_ sender: Any) {
         
         if toggelBackground.isOn {
-            subView.isHidden = false
+          //  subView.isHidden = false
             view.backgroundColor = .black
             labelSetting.textColor = .white
             backgroundColorText.textColor = .white
@@ -31,7 +31,7 @@ class SettingsViewController: UIViewController {
             
 
         } else {
-            subView.isHidden = true
+           // subView.isHidden = true
             view.backgroundColor = .white
             labelSetting.textColor = .black
             backgroundColorText.textColor = .black

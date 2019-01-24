@@ -32,22 +32,17 @@ class MyFriendsController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
-
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return characters.count
     }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         myFriendsCharacter = myFriends.filter{$0[$0.startIndex] == Character(characters[section])
         }
-            
         return myFriendsCharacter.count
     }
-
         override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         myFriendsCharacter = myFriends.filter{$0[$0.startIndex] == Character(characters[indexPath.section])
@@ -65,7 +60,6 @@ class MyFriendsController: UITableViewController {
                 cell.fotoFriend.layer.shadowOpacity = cell.shadowOpacity
                 cell.fotoFriend.layer.shadowRadius = cell.shadowRadius
                 cell.fotoFriend.layer.masksToBounds = false
-                
                 
                 //add subview
                 

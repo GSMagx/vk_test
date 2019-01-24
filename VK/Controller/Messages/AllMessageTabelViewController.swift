@@ -8,9 +8,19 @@
 
 import UIKit
 
-class AllMessageTabelViewController: UITableViewController {
+
+
+class AllMessageabelViewController: UITableViewController {
     
-    var friends = [String]()
+    var message = [String]()
+    
+//    var message : [String] = [
+//        StructMessages(userName: "Vladimir Putin", textMessage: "Hi. I go to school at 7 o‘clock", photo: UIImage(named: "putin")!, date: "Today"),
+//        StructMessages(userName: "Maxim Galkin", textMessage: "Please call me back", photo: UIImage(named: "galkin")!, date: "12.01.2019"),
+//        StructMessages(userName: "Genadiy Suganov", textMessage: "Super Star", photo: UIImage(named: "suganov")!, date: "01.01.2019"),
+//        StructMessages(userName: "Boris Elzin", textMessage: "I am a very poor man...", photo: UIImage(named: "elzin")!, date: "many years ago")
+//
+//    ]
     
 
     override func viewDidLoad() {
@@ -31,17 +41,20 @@ class AllMessageTabelViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-     
-        return friends.count
+        return message.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FriendsCell", for: indexPath) as! TableViewCellAllMessage
         
-        let friend = friends[indexPath.row]
+       let messag = message[indexPath.row]
         
-        cell.friendName.text = friend
+//        cell.messageUserName.text = messag.userName
+//        cell.messageText.text = messag.textMessage
+//        cell.messageDate.text = messag.date
+//        cell.messageUserImage.image = messag.photo
+    
 
         return cell
     }

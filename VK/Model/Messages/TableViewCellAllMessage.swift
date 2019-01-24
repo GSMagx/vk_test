@@ -10,7 +10,10 @@ import UIKit
 
 class TableViewCellAllMessage: UITableViewCell {
 
-    @IBOutlet weak var friendName: UILabel!
+    @IBOutlet weak var messageUserName: UILabel!
+    @IBOutlet weak var messageUserImage: UIImageView!
+    @IBOutlet weak var messageDate: UILabel!
+    @IBOutlet weak var messageText: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
