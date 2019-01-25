@@ -50,32 +50,36 @@ class MyFriendsController: UITableViewController {
             
         let cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell", for: indexPath) as! MyFriendsCell
         let friend = myFriendsCharacter[indexPath.row]
-        cell.friendName.text = friend
+            let photo = fotoMyFriends[friend]?.last
+            cell.friendName.text = friend
+            cell.fotoFriend.image = UIImage(named: photo!)
         
-            if let nameAvatar = fotoMyFriends[friend]?.last {
-                cell.fotoFriend.backgroundColor = UIColor.white
-                cell.fotoFriend.layer.shadowColor = UIColor.black.cgColor
-                cell.fotoFriend.layer.cornerRadius = 20
-                cell.fotoFriend.layer.shadowOffset = cell.shadowOffset
-                cell.fotoFriend.layer.shadowOpacity = cell.shadowOpacity
-                cell.fotoFriend.layer.shadowRadius = cell.shadowRadius
-                cell.fotoFriend.layer.masksToBounds = false
-                
+        //  let nameAvatar = fotoMyFriends[friend]?.last
+//                cell.fotoFriend.backgroundColor = UIColor.white
+//                cell.fotoFriend.layer.shadowColor = UIColor.black.cgColor
+//                cell.fotoFriend.layer.cornerRadius = 20
+//                cell.fotoFriend.layer.shadowOffset = cell.shadowOffset
+//                cell.fotoFriend.layer.shadowOpacity = cell.shadowOpacity
+//                cell.fotoFriend.layer.shadowRadius = cell.shadowRadius
+//                cell.fotoFriend.layer.masksToBounds = false
+            
                 //add subview
                 
-                let borderView = UIView(frame: cell.fotoFriend.bounds)
-                borderView.frame = cell.fotoFriend.bounds
-                borderView.layer.cornerRadius = 20
-                borderView.layer.masksToBounds = true
-                cell.fotoFriend.addSubview(borderView)
-                
+//                let borderView = UIView(frame: cell.fotoFriend.bounds)
+//                borderView.frame = cell.fotoFriend.bounds
+//                borderView.layer.cornerRadius = 20
+//                borderView.layer.masksToBounds = true
+//                cell.fotoFriend.addSubview(borderView)
+//
                 //add subcontent
-                let photo = UIImageView()
-                photo.image = UIImage(named: nameAvatar)
-                photo.frame = borderView.bounds
-                borderView.addSubview(photo)
+            //
+            
+        //    let photo = UIImageView()
+       //     photo.image = UIImage(named: nameAvatar!)
+//                photo.frame = borderView.bounds
+//                borderView.addSubview(photo)
  
-            }
+            
         return cell
     }
     

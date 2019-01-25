@@ -14,7 +14,7 @@ import UIKit
     @IBInspectable var shadowColor: UIColor = .black
     @IBInspectable var shadowOffset: CGSize = .zero
     /// Прозрачность тени
-    @IBInspectable var shadowOpacity: Float = 0.5
+    @IBInspectable var shadowOpacity: Float = 2
     /// Радиус блура тени
     @IBInspectable var shadowRadius: CGFloat = 8
     
@@ -49,7 +49,7 @@ import UIKit
         layer.shadowOpacity = shadowOpacity
         layer.shadowRadius = shadowRadius
         layer.shadowOffset = shadowOffset
-        layer.masksToBounds = false
+        layer.masksToBounds = true
     }
     
 }

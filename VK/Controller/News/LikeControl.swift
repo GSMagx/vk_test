@@ -8,13 +8,15 @@
 
 import UIKit
 
-@IBDesignable class LikeControl: UIStackView {
+@IBDesignable class LikeControl: UIView {
     
     @IBInspectable var like = 0
 
     var likeActive = false
     var button = UIButton()
     var label = UILabel()
+    
+    private var stackView: UIStackView!
     
     class NewsGroup {
         var fotoGroup: String
@@ -39,46 +41,65 @@ import UIKit
         setupButtons()
     }
 
-    required init(coder: NSCoder) {
-        super.init(coder: coder)
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
         setupButtons()
     }
     
     func setupButtons()  {
-        removeArrangedSubview(label)
-        removeArrangedSubview(button)
         let bundle = Bundle(for: type(of: self))
         let filledHeart = UIImage(named: "like", in: bundle, compatibleWith: self.traitCollection)
         let emptyHeart = UIImage(named: "noLike", in: bundle, compatibleWith: self.traitCollection)
         label.text = String(like)
-        addArrangedSubview(button)
-        addArrangedSubview(label)
+        stackView = UIStackView(arrangedSubviews: [button, label])
+        // self.addSubview(stackView)
+        self.addSubview(button)
+        self.addSubview(label)
         label.leadingAnchor.constraint(equalTo: button.trailingAnchor).isActive = true
         label.topAnchor.constraint(equalTo: button.topAnchor, constant: 5.0).isActive = true
         if !likeActive {
             button.addTarget(self, action: #selector(LikeControl.likeButtonTapped(button:)), for: .touchUpInside)
             button.setImage(emptyHeart, for: .normal)
             button.setImage(filledHeart, for: .selected)
-            label.textColor = #colorLiteral(red: 0.1215686277, green: 0.01176470611, blue: 0.4235294163, alpha: 1)
+            label.textColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+            label.font = UIFont(name: label.font.fontName, size: 15)
         } else {
             button.addTarget(self, action: #selector(LikeControl.likeButtonTapped(button:)), for: .touchUpInside)
             button.setImage(filledHeart, for: .normal)
             button.setImage(emptyHeart, for: .selected)
             label.textColor = UIColor.red
         }
-
     }
+    
+
     
     @objc func likeButtonTapped(button: UIButton) {
         if !likeActive {
             likeActive = true
             like += 1
+            UIView.animate(withDuration: 0.5,
+                           delay: 0,
+                           usingSpringWithDamping: 0.01,
+                           initialSpringVelocity: 0.2,
+                           options: [],
+                           animations: {
+                            self.label.frame.origin.y -= 30
+            })
         } else {
             likeActive = false
             like -= 1
+            UIView.animate(withDuration: 0.2,
+                           delay: 0,
+                           usingSpringWithDamping: 0.001,
+                           initialSpringVelocity: 0.1,
+                           options: [],
+                           animations: {
+                            self.label.frame.origin.y = 30
+            })
         }
         setupButtons()
     }
+
     
     
 }
