@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D8F7EA8D2A602A85B4B5A8D3 /* Pods_VKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3769BAF0A51528D9F4B8DC81 /* Pods_VKTests.framework */; };
 		ED22AD7E8798B8386FF3D6C6 /* Pods_VK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2296E2D275E724A8889DFF1B /* Pods_VK.framework */; };
+		FA02DD142200642700A22D6A /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = FA02DD132200642700A22D6A /* loader.json */; };
 		FA25499221E7DC9400E2EFEB /* TableViewCellMyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA25499121E7DC9400E2EFEB /* TableViewCellMyMessage.swift */; };
 		FA25499421E7DCBC00E2EFEB /* MyMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA25499321E7DCBC00E2EFEB /* MyMessageTableViewController.swift */; };
 		FA2A561A21C56956005C7720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A561921C56956005C7720 /* AppDelegate.swift */; };
@@ -24,6 +25,7 @@
 		FA43E20621EC856E009D3A95 /* AllGroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43E20521EC856E009D3A95 /* AllGroupsCell.swift */; };
 		FA43E20821EC8582009D3A95 /* AllGroupsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43E20721EC8582009D3A95 /* AllGroupsController.swift */; };
 		FA459A9021FA3A5D0014B043 /* CircularShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA459A8F21FA3A5D0014B043 /* CircularShadowView.swift */; };
+		FA4B2B082203067D006C362E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B2B072203067D006C362E /* StartViewController.swift */; };
 		FA60DEA021EE230C001DB6FB /* MyNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60DE9F21EE230C001DB6FB /* MyNewsCell.swift */; };
 		FA60DEA221EE2326001DB6FB /* NewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60DEA121EE2326001DB6FB /* NewsController.swift */; };
 		FA60DEA521EE259F001DB6FB /* LikeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60DEA421EE259F001DB6FB /* LikeControl.swift */; };
@@ -35,6 +37,10 @@
 		FA7C0A4E21C664BB0080EAA8 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7C0A4D21C664BB0080EAA8 /* MainTabBarController.swift */; };
 		FAABD5FF21E7CDC900524134 /* AllMessageTabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABD5FE21E7CDC900524134 /* AllMessageTabelViewController.swift */; };
 		FAABD60121E7CE0700524134 /* TableViewCellAllMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABD60021E7CE0700524134 /* TableViewCellAllMessage.swift */; };
+		FAD2781722031B5E005F070E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2781622031B5E005F070E /* RegisterViewController.swift */; };
+		FAFBF9242200C8B200CDABF9 /* start.json in Resources */ = {isa = PBXBuildFile; fileRef = FAFBF9232200C8B100CDABF9 /* start.json */; };
+		FAFBF9262200CFA600CDABF9 /* start2.json in Resources */ = {isa = PBXBuildFile; fileRef = FAFBF9252200CFA600CDABF9 /* start2.json */; };
+		FAFBF9282200D8E700CDABF9 /* GreenDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFBF9272200D8E600CDABF9 /* GreenDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +60,7 @@
 		3769BAF0A51528D9F4B8DC81 /* Pods_VKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9A1AFFB7AE6762F9D0AEC3 /* Pods-VKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VKTests/Pods-VKTests.release.xcconfig"; sourceTree = "<group>"; };
 		C0A25CB3C48C9ACCF236E1FA /* Pods-VKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VKTests/Pods-VKTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA02DD132200642700A22D6A /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = loader.json; path = ../../../Downloads/loader.json; sourceTree = "<group>"; };
 		FA25499121E7DC9400E2EFEB /* TableViewCellMyMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellMyMessage.swift; sourceTree = "<group>"; };
 		FA25499321E7DCBC00E2EFEB /* MyMessageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMessageTableViewController.swift; sourceTree = "<group>"; };
 		FA2A561621C56956005C7720 /* VK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VK.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +80,7 @@
 		FA43E20521EC856E009D3A95 /* AllGroupsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsCell.swift; sourceTree = "<group>"; };
 		FA43E20721EC8582009D3A95 /* AllGroupsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsController.swift; sourceTree = "<group>"; };
 		FA459A8F21FA3A5D0014B043 /* CircularShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularShadowView.swift; sourceTree = "<group>"; };
+		FA4B2B072203067D006C362E /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		FA60DE9F21EE230C001DB6FB /* MyNewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNewsCell.swift; sourceTree = "<group>"; };
 		FA60DEA121EE2326001DB6FB /* NewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsController.swift; sourceTree = "<group>"; };
 		FA60DEA421EE259F001DB6FB /* LikeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeControl.swift; sourceTree = "<group>"; };
@@ -84,6 +92,10 @@
 		FA7C0A4D21C664BB0080EAA8 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		FAABD5FE21E7CDC900524134 /* AllMessageTabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMessageTabelViewController.swift; sourceTree = "<group>"; };
 		FAABD60021E7CE0700524134 /* TableViewCellAllMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellAllMessage.swift; sourceTree = "<group>"; };
+		FAD2781622031B5E005F070E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		FAFBF9232200C8B100CDABF9 /* start.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = start.json; path = ../../../Downloads/start.json; sourceTree = "<group>"; };
+		FAFBF9252200CFA600CDABF9 /* start2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = start2.json; path = ../../../Downloads/start2.json; sourceTree = "<group>"; };
+		FAFBF9272200D8E600CDABF9 /* GreenDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +162,9 @@
 			isa = PBXGroup;
 			children = (
 				FA2A561921C56956005C7720 /* AppDelegate.swift */,
+				FAFBF9232200C8B100CDABF9 /* start.json */,
+				FAFBF9252200CFA600CDABF9 /* start2.json */,
+				FA02DD132200642700A22D6A /* loader.json */,
 				FA7C0A4A21C662E50080EAA8 /* Controller */,
 				FA7C0A4C21C6639C0080EAA8 /* Model */,
 				FA7C0A4B21C6636B0080EAA8 /* View */,
@@ -235,6 +250,7 @@
 				FA7B5AC021EA244C00345D6D /* Friends */,
 				FA7B5ABC21E9E5FC00345D6D /* Messages */,
 				FA2A561B21C56956005C7720 /* LoginFormController.swift */,
+				FAFBF9272200D8E600CDABF9 /* GreenDelegate.swift */,
 				FA7C0A4D21C664BB0080EAA8 /* MainTabBarController.swift */,
 			);
 			path = Controller;
@@ -244,6 +260,8 @@
 			isa = PBXGroup;
 			children = (
 				FA2A561D21C56956005C7720 /* Main.storyboard */,
+				FAD2781622031B5E005F070E /* RegisterViewController.swift */,
+				FA4B2B072203067D006C362E /* StartViewController.swift */,
 				FA459A8F21FA3A5D0014B043 /* CircularShadowView.swift */,
 				FA6243F721EF064300B57CBA /* SettingsViewController.swift */,
 				FA2A562521C5695A005C7720 /* LaunchScreen.storyboard */,
@@ -347,8 +365,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAFBF9242200C8B200CDABF9 /* start.json in Resources */,
 				FA2A562721C5695A005C7720 /* LaunchScreen.storyboard in Resources */,
+				FAFBF9262200CFA600CDABF9 /* start2.json in Resources */,
 				FA2A562421C5695A005C7720 /* Assets.xcassets in Resources */,
+				FA02DD142200642700A22D6A /* loader.json in Resources */,
 				FA2A561F21C56956005C7720 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,9 +506,12 @@
 				FA459A9021FA3A5D0014B043 /* CircularShadowView.swift in Sources */,
 				FA7B5AC421EA2DF900345D6D /* FotoFriendCollectionController.swift in Sources */,
 				FAABD5FF21E7CDC900524134 /* AllMessageTabelViewController.swift in Sources */,
+				FAD2781722031B5E005F070E /* RegisterViewController.swift in Sources */,
 				FA25499221E7DC9400E2EFEB /* TableViewCellMyMessage.swift in Sources */,
+				FA4B2B082203067D006C362E /* StartViewController.swift in Sources */,
 				FA25499421E7DCBC00E2EFEB /* MyMessageTableViewController.swift in Sources */,
 				FA7B5AC221EA273400345D6D /* MyFriendsCell.swift in Sources */,
+				FAFBF9282200D8E700CDABF9 /* GreenDelegate.swift in Sources */,
 				FA60DEA221EE2326001DB6FB /* NewsController.swift in Sources */,
 				FAABD60121E7CE0700524134 /* TableViewCellAllMessage.swift in Sources */,
 				FA2A562221C56956005C7720 /* VK.xcdatamodeld in Sources */,
@@ -656,7 +680,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D74U932N2V;
 				INFOPLIST_FILE = VK/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.gsmag.VK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -672,7 +699,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D74U932N2V;
 				INFOPLIST_FILE = VK/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.gsmag.VK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -689,7 +719,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D74U932N2V;
 				INFOPLIST_FILE = VKTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.gsmag.VKTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -707,7 +741,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D74U932N2V;
 				INFOPLIST_FILE = VKTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.gsmag.VKTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

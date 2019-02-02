@@ -7,14 +7,20 @@
 //
 
 import UIKit
+import Lottie
+
 
 class LoginFormController: UIViewController {
+    @IBOutlet weak var animationLoader: LOTAnimationView!
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var loginInput: LoginTextField!
     @IBOutlet weak var passwordInput: LoginTextField!
     @IBOutlet weak var loginTitle: UILabel!
     @IBOutlet weak var logoView: UIImageView!
+    
+    
+    
     
     @IBOutlet weak var passwordTitle: UILabel!
     @IBOutlet weak var loginButton: UIButton!
@@ -61,6 +67,15 @@ class LoginFormController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        animationLoader.setAnimation(named: "loader")
+        animationLoader.loopAnimation = true
+        animationLoader.frame = CGRect(x: 0, y: 100, width: self.view.frame.width, height: 250)
+        animationLoader.animationSpeed = 0.8
+    
+        animationLoader.play()
+      
+        
         animateLoginField()
         animatePasswordField()
         
@@ -76,6 +91,7 @@ class LoginFormController: UIViewController {
         guard  identifier == "ShowTabBarController"  else { return false }
         let checkResult = checkUsersData()
         animationSeque()
+        
         if !checkResult {
             print("Error")
         }
@@ -102,6 +118,8 @@ class LoginFormController: UIViewController {
     }
 
     @IBAction func loginButtonAction(_ sender: Any) {
+        
+        
         
 //        UIView.transition(with: self.view, duration: 0.5, options: .transitionFlipFromBottom, animations: {
 //        //    self.view.addSubview(self.imageView)
